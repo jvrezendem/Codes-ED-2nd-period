@@ -27,11 +27,13 @@ struct vectorx
     int* vetor;
     int tam;
 
+    //funciona como um construtor
     void inicializa(int n) {
         vetor = new int[n];
         tam = n;
     }
 
+     
     void finaliza() {
         delete[] vetor;
         tam = 0;

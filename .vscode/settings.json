@@ -1,5 +1,9 @@
 {
     "C_Cpp.default.intelliSenseMode": "gcc-x86",
     "C_Cpp.default.mergeConfigurations": true,
-    "C_Cpp.default.compilerPath": ""
+    "C_Cpp.default.compilerPath": "",
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
 }
