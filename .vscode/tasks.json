@@ -2,20 +2,20 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build (WSL)",
+            "label": "Compilar C++",
             "type": "shell",
-            "command": "bash",
+            "command": "g++",
             "args": [
-                "-lc",
-                "mkdir -p .vscode/bin && g++ -std=c++17 -g \"REO 1\"/*.cpp -o .vscode/bin/app"
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
+            "group": "build",
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build"
+            "detail": "Compilação usando g++ no WSL"
         },
         {
             "type": "cppbuild",
