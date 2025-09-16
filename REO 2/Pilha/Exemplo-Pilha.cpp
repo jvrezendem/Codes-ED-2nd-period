@@ -20,7 +20,7 @@ class No {
 };
 
 //Pilha = principio First in Last out "FILO"
-//Exemplo de estrutura dinânica, ou seja, não possui tamanho definido
+//Exemplo de estrutura dinâmica, ou seja, não possui tamanho definido
 class Pilha {
     private:
         unsigned tamanhoPilha;
