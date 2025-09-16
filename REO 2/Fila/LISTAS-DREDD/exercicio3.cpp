@@ -77,7 +77,7 @@ int main() {
 
     Fila f1, f2, f3;
     int inserirValor, tam1, tam2;
-    int ultimo1 = 0, ultimo2 = 0;
+    int ultimo1, ultimo2;
 
     cin >> tam1;
     for(int i = 0; i < tam1; i++){
