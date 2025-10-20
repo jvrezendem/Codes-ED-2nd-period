@@ -1,0 +1,37 @@
+Visão geral de uma lista:
+        -> Possui pelo menos um ponteiro que aponta para o primeiro elemento. a maior parte das implementações possui um ponteiro
+        que aponta para o ultimo elemento (facilitar o acesso ao ultimo elemento e por exemplo, a inserção de um elemento)
+
+        -> Um atributo opcional bastante utilizado é o tamanho da lista (faz com que não seja necessário percorrer a lista toda)
+        para saber o tamanho da lista
+
+        -> Cada nó possui dados e um ponteiro para o próximo e o ultimo para o nulo
+
+        -> Geralmente a estrutura é feita em classes
+
+        -> Sem ponteiro para o ultimo elemento a inserção no final da lisrta precisa percorrê-la por inteiro
+
+        -> Os métodos geralmente são implementados de maneira iterativa, sendo possivel implementar de maneira recursiva
+
+        -> Os nós são privados então metodos que os utilizam custumam ser auxiliares e privados ou movidos pra uma classe
+        que representa os nós da lista
+
+        -> Algumas listas disponibilizam metodos que retornam iteradores, utilizados para acessar elementos específicos da 
+        lista a partir de uma dada posição
+
+        -> Algumas implementações utilizam dois encadeamentos, ponteiro para o próximo nó e ponteiro par o nó anterior
+
+        -> É possivel implementar uma lista em arranjo (vetor de nós). Nesse casso, cada nó poddui um dado e a posição no
+        próximo nó e a posição do nó anterior
+        
+    Métodos Básicos:
+        Construção: inicializa os dados e aponta os ponteiros início e fim para null
+        Destruição: percorre a lista apagando os nós
+        Caminhamento/Percorrimento: percorre os nós da lista, um por um
+        Busca: percorre a lista buscando um nó com dado valor
+        Acessa Posição: percorre os nós da lista, um por um, até uma determinada posição
+        Inserção: Insere um novo nó na lista. Pode ser feita no inicio, no final e em uma posição determinada da lista (precisa
+        percorrer a lista até chegar à posição desejada)
+        Remoção: Remove um nó da lista. Pode ser feita no início da lista ou no final, remoção de um nó com um dado valor (
+        é necessário encontrá-lo antes), remoção de um nó de uma dada posição (precisa precorrer a lista até chegar a posição
+        desejada)
